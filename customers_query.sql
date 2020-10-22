@@ -1,0 +1,13 @@
+select * from Customers;
+select CustomerID,CustomerName from Customers;
+select distinct CustomerID,CustomerName from Customers;
+select CustomerID,CustomerName from Customers;
+SELECT COUNT(DISTINCT Country) FROM Customers;
+SELECT COUNT(DISTINCT CustomerName) FROM Customers;
+select CustomerID,CustomerName from Customers where Country='Germany' and not CustomerID=3;
+select * from Customers order by Country DESC,CustomerName ASC;
+select CustomerID City from Customers where City is null;
+update Customers set CustomerName='ab' where CustomerID=1;
+delete from Customers where CustomerName='ab';
+select sum(CustomerID) as city from Customers;
+select * from Customers where City not like '[b]%';
